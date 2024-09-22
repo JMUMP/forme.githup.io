@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freelancers Zone</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+</head>
+
+<body>
+
+    <div class="custom-cursor"></div> <!-- Custom cursor element -->
+    <div class="custom-cursor-trail"></div> <!-- Cursor trail element -->
+    <header>
+
+
+        <!-- Navbar Section -->
+        <nav class="navbar section">
+            <div class="logo">
+                <img src="image/logo.png" alt="Logo">
+            </div>
+            <div class="nav-buttons">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#team">Team</a>
+                <a href="#get-in-touch">Contact us</a>
+            </div>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/freelancerszonepk123" target="_blank">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://www.linkedin.com/company/freelancerszone/" target="_blank">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </div>
+            <div class="hamburger" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+
+        <!-- Hamburger Menu -->
+        <div class="hamburger-menu">
+            <div class="hamburger-menu-content">
+                <div class="hamburger-nav-buttons">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#services">Services</a>
+                    <a href="#portfolio">Portfolio</a>
+                    <a href="#team">Team</a>
+                    <a href="#get-in-touch">Contact us</a>
+                </div>
+                <div class="hamburger-social-links">
+                    <a href="https://www.facebook.com/freelancerszonepk123" target="_blank">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/company/freelancerszone/" target="_blank">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hero Section -->
+        <div class="hero-container">
+            <div class="content" id="home">
+                <div class="text-content">
+                    <h1 class="spiral-text">A Digital Agency</h1>
+                    <p class="spiral-text">
+                        Empowering Your Success with Precision and Efficiency. Your Trusted Partner in
+                        <span>Lead Generation, Data Entry, Influencer Research, and much more...</span>
+                    </p>
+                    <a href="https://api.whatsapp.com/send?phone=923090266690&text=Hi!%20I%20am%20contacting%20you%20from%20your%20Website."
+                        target="_blank" class="whatsapp-icon">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+                <div class="image-content">
+                    <img src="image/4.jpg" alt="Hero Image">
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <!-- About Us Section -->
+        <section class="about-container" id="about">
+            <!-- Centered Heading -->
+            <h2>About Us</h2>
+
+            <div class="about-wrapper">
+                <!-- Image Column -->
+                <div class="about-image" data-aos="slide-right">
+                    <img src="image/customize.png" alt="About Us Image">
+                </div>
+                <!-- Text Column -->
+                <div class="about-text">
+                    <p class="spiral-text">
+                        We have been delivering excellence in lead generation, influencer research, data entry, and web
+                        development for over a decade.
+                    </p>
+                    <p>
+                        With a keen focus on innovation and precision, we help businesses grow by providing strategic
+                        solutions tailored to their unique needs.
+                        Our experienced team is committed to ensuring high-quality results that meet the evolving
+                        demands of the industry.
+                    </p>
+                    <p>
+                        Whether you're looking to increase brand visibility, streamline operations, or find the right
+                        influencers for your campaigns, our team is here to assist. We believe in long-term partnerships
+                        and strive to foster strong, collaborative relationships with all of our clients.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+        <!-- Services Container -->
+        <section class="services-container" id="services">
+            <h2>Services We Offer</h2>
+
+            <div class="services-wrapper">
+                <!-- Lead Generation -->
+                <div class="service-box">
+                    <i class="fas fa-search"></i>
+                    <h3>Lead Generation</h3>
+                    <p>Our lead generation services help businesses capture targeted prospects through customized
+                        strategies,
+                        boosting your sales pipeline with qualified leads.</p>
+                </div>
+
+                <!-- Data Entry -->
+                <div class="service-box">
+                    <i class="fas fa-keyboard"></i>
+                    <h3>Data Entry</h3>
+                    <p>Accurate, fast, and cost-effective data entry services that ensure your records and databases are
+                        managed seamlessly for business operations.</p>
+                </div>
+
+                <!-- Influencer Research -->
+                <div class="service-box">
+                    <i class="fas fa-users"></i>
+                    <h3>Influencer Research</h3>
+                    <p>We find the best influencers tailored to your business needs, helping you connect with your
+                        target
+                        audience and grow your brand presence.</p>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+<!-- Portfolio Section -->
+<div class="portfolio-container" id="portfolio">
+    <h2 class="portfolio-heading">Our Portfolio</h2>
+    <div class="portfolio-buttons">
+        <button class="portfolio-btn active" onclick="showProjects('all')">All Projects</button>
+        <button class="portfolio-btn" onclick="showProjects('lead-generation')">Lead Generation</button>
+        <button class="portfolio-btn" onclick="showProjects('data-entry')">Data Entry</button>
+        <button class="portfolio-btn" onclick="showProjects('influencer-research')">Influencer Research</button>
+        <button class="portfolio-btn" onclick="showProjects('web-development')">Web Development</button>
+    </div>
+    <div class="portfolio-content">
+        <div class="project-cards all active">
+            <!-- Sample Project Card -->
+            <div class="project-card">
+                <!-- Link added to image -->
+                <a href="path-to-your-excel-sheet.xlsx" target="_blank">
+                    <img src="image/4.jpg" alt="Project Image" class="project-image">
+                </a>
+                <!-- Project Title added as h3 under the image -->
+                <h3 class="project-title">Project 1</h3>
+                <div class="project-details">
+                    <div>
+                        <label>Category:</label>
+                        <p>Web Design</p>
+                    </div>
+                    <div>
+                        <label>Client:</label>
+                        <p>New Company</p>
+                    </div>
+                    <div>
+                        <label>Project Date:</label>
+                        <p>12 February, 2022</p>
+                    </div>
+                </div>
+            </div>
+            <!-- You can repeat similar project cards -->
+            <div class="project-card">
+                <!-- Link added to image -->
+                <a href="path-to-your-excel-sheet.xlsx" target="_blank">
+                    <img src="image/4.jpg" alt="Project Image" class="project-image">
+                </a>
+                <!-- Project Title added as h3 under the image -->
+                <h3 class="project-title">Project 1</h3>
+                <div class="project-details">
+                    <div>
+                        <label>Category:</label>
+                        <p>Web Design</p>
+                    </div>
+                    <div>
+                        <label>Client:</label>
+                        <p>New Company</p>
+                    </div>
+                    <div>
+                        <label>Project Date:</label>
+                        <p>12 February, 2022</p>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <!-- Link added to image -->
+                <a href="path-to-your-excel-sheet.xlsx" target="_blank">
+                    <img src="image/4.jpg" alt="Project Image" class="project-image">
+                </a>
+                <!-- Project Title added as h3 under the image -->
+                <h3 class="project-title">Project 1</h3>
+                <div class="project-details">
+                    <div>
+                        <label>Category:</label>
+                        <p>Web Design</p>
+                    </div>
+                    <div>
+                        <label>Client:</label>
+                        <p>New Company</p>
+                    </div>
+                    <div>
+                        <label>Project Date:</label>
+                        <p>12 February, 2022</p>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <!-- Link added to image -->
+                <a href="path-to-your-excel-sheet.xlsx" target="_blank">
+                    <img src="image/4.jpg" alt="Project Image" class="project-image">
+                </a>
+                <!-- Project Title added as h3 under the image -->
+                <h3 class="project-title">Project 1</h3>
+                <div class="project-details">
+                    <div>
+                        <label>Category:</label>
+                        <p>Web Design</p>
+                    </div>
+                    <div>
+                        <label>Client:</label>
+                        <p>New Company</p>
+                    </div>
+                    <div>
+                        <label>Project Date:</label>
+                        <p>12 February, 2022</p>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <!-- Link added to image -->
+                <a href="path-to-your-excel-sheet.xlsx" target="_blank">
+                    <img src="image/4.jpg" alt="Project Image" class="project-image">
+                </a>
+                <!-- Project Title added as h3 under the image -->
+                <h3 class="project-title">Project 1</h3>
+                <div class="project-details">
+                    <div>
+                        <label>Category:</label>
+                        <p>Web Design</p>
+                    </div>
+                    <div>
+                        <label>Client:</label>
+                        <p>New Company</p>
+                    </div>
+                    <div>
+                        <label>Project Date:</label>
+                        <p>12 February, 2022</p>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <!-- Link added to image -->
+                <a href="path-to-your-excel-sheet.xlsx" target="_blank">
+                    <img src="image/4.jpg" alt="Project Image" class="project-image">
+                </a>
+                <!-- Project Title added as h3 under the image -->
+                <h3 class="project-title">Project 1</h3>
+                <div class="project-details">
+                    <div>
+                        <label>Category:</label>
+                        <p>Web Design</p>
+                    </div>
+                    <div>
+                        <label>Client:</label>
+                        <p>New Company</p>
+                    </div>
+                    <div>
+                        <label>Project Date:</label>
+                        <p>12 February, 2022</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="project-cards lead-generation">
+        <!-- Lead Generation Project Cards -->
+        <div class="project-card">
+            <!-- Link added to image -->
+            <a href="path-to-your-excel-sheet.xlsx" target="_blank">
+                <img src="image/4.jpg" alt="Project Image" class="project-image">
+            </a>
+            <!-- Project Title added as h3 under the image -->
+            <h3 class="project-title">Project 1</h3>
+            <div class="project-details">
+                <div>
+                    <label>Category:</label>
+                    <p>Web Design</p>
+                </div>
+                <div>
+                    <label>Client:</label>
+                    <p>New Company</p>
+                </div>
+                <div>
+                    <label>Project Date:</label>
+                    <p>12 February, 2022</p>
+                </div>
+            </div>
+        </div>
+        <div class="project-card">
+            <!-- Link added to image -->
+            <a href="path-to-your-excel-sheet.xlsx" target="_blank">
+                <img src="image/4.jpg" alt="Project Image" class="project-image">
+            </a>
+            <!-- Project Title added as h3 under the image -->
+            <h3 class="project-title">Project 1</h3>
+            <div class="project-details">
+                <div>
+                    <label>Category:</label>
+                    <p>Web Design</p>
+                </div>
+                <div>
+                    <label>Client:</label>
+                    <p>New Company</p>
+                </div>
+                <div>
+                    <label>Project Date:</label>
+                    <p>12 February, 2022</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="project-cards data-entry">
+        <!-- Data Entry Project Cards -->
+        <div class="project-card">
+            <!-- Link added to image -->
+            <a href="path-to-your-excel-sheet.xlsx" target="_blank">
+                <img src="image/4.jpg" alt="Project Image" class="project-image">
+            </a>
+            <!-- Project Title added as h3 under the image -->
+            <h3 class="project-title">Project 1</h3>
+            <div class="project-details">
+                <div>
+                    <label>Category:</label>
+                    <p>Web Design</p>
+                </div>
+                <div>
+                    <label>Client:</label>
+                    <p>New Company</p>
+                </div>
+                <div>
+                    <label>Project Date:</label>
+                    <p>12 February, 2022</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="project-cards influencer-research">
+        <!-- Influencer Research Project Cards -->
+        <div class="project-card">
+            <!-- Link added to image -->
+            <a href="path-to-your-excel-sheet.xlsx" target="_blank">
+                <img src="image/4.jpg" alt="Project Image" class="project-image">
+            </a>
+            <!-- Project Title added as h3 under the image -->
+            <h3 class="project-title">Project 1</h3>
+            <div class="project-details">
+                <div>
+                    <label>Category:</label>
+                    <p>Web Design</p>
+                </div>
+                <div>
+                    <label>Client:</label>
+                    <p>New Company</p>
+                </div>
+                <div>
+                    <label>Project Date:</label>
+                    <p>12 February, 2022</p>
+                </div>
+            </div>
+        </div>
+        <div class="project-card">
+            <!-- Link added to image -->
+            <a href="path-to-your-excel-sheet.xlsx" target="_blank">
+                <img src="image/4.jpg" alt="Project Image" class="project-image">
+            </a>
+            <!-- Project Title added as h3 under the image -->
+            <h3 class="project-title">Project 1</h3>
+            <div class="project-details">
+                <div>
+                    <label>Category:</label>
+                    <p>Web Design</p>
+                </div>
+                <div>
+                    <label>Client:</label>
+                    <p>New Company</p>
+                </div>
+                <div>
+                    <label>Project Date:</label>
+                    <p>12 February, 2022</p>
+                </div>
+            </div>
+        </div>
+        <div class="project-card">
+            <!-- Link added to image -->
+            <a href="path-to-your-excel-sheet.xlsx" target="_blank">
+                <img src="image/4.jpg" alt="Project Image" class="project-image">
+            </a>
+            <!-- Project Title added as h3 under the image -->
+            <h3 class="project-title">Project 1</h3>
+            <div class="project-details">
+                <div>
+                    <label>Category:</label>
+                    <p>Web Design</p>
+                </div>
+                <div>
+                    <label>Client:</label>
+                    <p>New Company</p>
+                </div>
+                <div>
+                    <label>Project Date:</label>
+                    <p>12 February, 2022</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="project-cards web-development">
+        <!-- Web Development Project Cards -->
+        <div class="project-card">
+            <!-- Link added to image -->
+            <a href="path-to-your-excel-sheet.xlsx" target="_blank">
+                <img src="image/4.jpg" alt="Project Image" class="project-image">
+            </a>
+            <!-- Project Title added as h3 under the image -->
+            <h3 class="project-title">Project 1</h3>
+            <div class="project-details">
+                <div>
+                    <label>Category:</label>
+                    <p>Web Design</p>
+                </div>
+                <div>
+                    <label>Client:</label>
+                    <p>New Company</p>
+                </div>
+                <div>
+                    <label>Project Date:</label>
+                    <p>12 February, 2022</p>
+                </div>
+            </div>
+        </div>
+        <div class="project-card">
+            <!-- Link added to image -->
+            <a href="path-to-your-excel-sheet.xlsx" target="_blank">
+                <img src="image/4.jpg" alt="Project Image" class="project-image">
+            </a>
+            <!-- Project Title added as h3 under the image -->
+            <h3 class="project-title">Project 1</h3>
+            <div class="project-details">
+                <div>
+                    <label>Category:</label>
+                    <p>Web Design</p>
+                </div>
+                <div>
+                    <label>Client:</label>
+                    <p>New Company</p>
+                </div>
+                <div>
+                    <label>Project Date:</label>
+                    <p>12 February, 2022</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <section id="team">
+            <h2>Meet Our Team</h2>
+            <div class="team-container">
+                <!-- Team Member 1 -->
+                <div class="team-member">
+                    <div class="image-container">
+                        <img src="image/girl.webp" alt="Team Member 1">
+                    </div>
+                    <div class="info-container">
+                        <h4>EXPERT CONSULTANT</h4>
+                        <h3>Thomas Willimes</h3>
+                        <div class="social-icons1">
+                            <i class="fas fa-share-alt"></i>
+                            <div class="social-links">
+                                <a href="https://www.facebook.com/freelancerszonepk123" target="_blank"><i
+                                        class="fab fa-facebook"></i></a>
+                                <a href="https://www.linkedin.com/company/freelancerszone/" target="_blank"><i
+                                        class="fab fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team-member">
+                    <div class="image-container">
+                        <img src="image/girl.webp" alt="Team Member 1">
+                    </div>
+                    <div class="info-container">
+                        <h4>EXPERT CONSULTANT</h4>
+                        <h3>Thomas Willimes</h3>
+                        <div class="social-icons1">
+                            <i class="fas fa-share-alt"></i>
+                            <div class="social-links">
+                                <a href="https://www.facebook.com/freelancerszonepk123" target="_blank"><i
+                                        class="fab fa-facebook"></i></a>
+                                <a href="https://www.linkedin.com/company/freelancerszone/" target="_blank"><i
+                                        class="fab fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team-member">
+                    <div class="image-container">
+                        <img src="image/girl.webp" alt="Team Member 1">
+                    </div>
+                    <div class="info-container">
+                        <h4>EXPERT CONSULTANT</h4>
+                        <h3>Thomas Willimes</h3>
+                        <div class="social-icons1">
+                            <i class="fas fa-share-alt"></i>
+                            <div class="social-links">
+                                <a href="https://www.facebook.com/freelancerszonepk123" target="_blank"><i
+                                        class="fab fa-facebook"></i></a>
+                                <a href="https://www.linkedin.com/company/freelancerszone/" target="_blank"><i
+                                        class="fab fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team-member">
+                    <div class="image-container">
+                        <img src="image/girl.webp" alt="Team Member 1">
+                    </div>
+                    <div class="info-container">
+                        <h4>EXPERT CONSULTANT</h4>
+                        <h3>Thomas Willimes</h3>
+                        <div class="social-icons1">
+                            <i class="fas fa-share-alt"></i>
+                            <div class="social-links">
+                                <a href="https://www.facebook.com/freelancerszonepk123" target="_blank"><i
+                                        class="fab fa-facebook"></i></a>
+                                <a href="https://www.linkedin.com/company/freelancerszone/" target="_blank"><i
+                                        class="fab fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team-member">
+                    <div class="image-container">
+                        <img src="image/girl.webp" alt="Team Member 1">
+                    </div>
+                    <div class="info-container">
+                        <h4>EXPERT CONSULTANT</h4>
+                        <h3>Thomas Willimes</h3>
+                        <div class="social-icons1">
+                            <i class="fas fa-share-alt"></i>
+                            <div class="social-links">
+                                <a href="https://www.facebook.com/freelancerszonepk123" target="_blank"><i
+                                        class="fab fa-facebook"></i></a>
+                                <a href="https://www.linkedin.com/company/freelancerszone/" target="_blank"><i
+                                        class="fab fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+
+
+
+        <section id="get-in-touch">
+            <h2 class="contact-heading">Contact Us</h2>
+            <div class="contact-wrapper">
+                <div class="contact-info-box">
+                    <h3>Contact Information</h3>
+                    <p><i class="fas fa-phone"></i> <a href="tel:+12344567890">+1234 456 7890</a></p>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:info@example.com">info@example.com</a></p>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Business St, City, Country</p>
+                    <div class="social-icons-box">
+                        <a href="https://www.facebook.com/freelancerszonepk123"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+        
+                <div class="contact-form-box">
+                    <h2>Get in Touch</h2>
+                    <form id="newContactForm">
+                        <div class="form-group-box">
+                            <input type="text" id="full-name" placeholder="Full Name" required>
+                            <i class="fas fa-user input-icon"></i>
+                        </div>
+                        <div class="form-group-box">
+                            <input type="email" id="email-address" placeholder="Email Address" required>
+                            <i class="fas fa-envelope input-icon"></i>
+                        </div>
+                        <div class="form-group-box">
+                            <input type="text" id="phone-number" placeholder="Phone Number" required>
+                            <i class="fas fa-phone input-icon"></i>
+                        </div>
+                        <div class="form-group-box">
+                            <textarea id="message-text" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-button small-button">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+        <footer id="footer">
+            <div class="footer-content">
+                <p>&copy; 2024 Your Company Name. All rights reserved.</p>
+            </div>
+        </footer>
+        
+        
+
+
+
+
+
+
+
+
+
+
+
+
+    </header>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
